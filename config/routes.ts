@@ -29,6 +29,12 @@ export default [
     component: './Welcome',
   },
   {
+    path: '/home',
+    name: 'home',
+    icon: 'home',
+    component: './Home',
+  },
+  {
     path: '/admin',
     name: 'admin',
     icon: 'crown',
