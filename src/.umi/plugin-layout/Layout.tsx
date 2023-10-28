@@ -90,7 +90,13 @@ export default (props: any) => {
   "pwa": true,
   "logo": "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
   "iconfontUrl": "",
-  "token": {}
+  "token": {
+    "pageContainer": {
+      "paddingBlockPageContainerContent": 8,
+      "paddingInlinePageContainerContent": 8
+    }
+  },
+  "siderWidth": 160
 };
 const { formatMessage } = useIntl();
   const runtimeConfig = pluginManager.applyPlugins({
