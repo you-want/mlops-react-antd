@@ -16,6 +16,7 @@ const Footer: React.FC = () => {
     <DefaultFooter
       style={{
         background: 'none',
+        height: 48,
       }}
       copyright={`${currentYear} ${defaultMessage}`}
       links={[

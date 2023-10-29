@@ -27,7 +27,7 @@ const InfoCard: React.FC<{
         fontSize: '14px',
         color: token.colorTextSecondary,
         lineHeight: '22px',
-        padding: '16px 19px',
+        padding: '16px',
         minWidth: '220px',
         flex: 1,
       }}
@@ -87,17 +87,14 @@ const Welcome: React.FC = () => {
   const { token } = theme.useToken();
   const { initialState } = useModel('@@initialState');
   return (
-    <PageContainer
-      style={{
-        margin: 8,
-      }}
-    >
+    <PageContainer>
       <Card
         style={{
           borderRadius: 8,
           marginBottom: 8,
         }}
         bodyStyle={{
+          padding: 16,
           backgroundImage:
             initialState?.settings?.navTheme === 'realDark'
               ? 'background-image: linear-gradient(75deg, #1A1B1F 0%, #191C1F 100%)'
@@ -127,7 +124,7 @@ const Welcome: React.FC = () => {
               color: token.colorTextSecondary,
               lineHeight: '22px',
               marginTop: 16,
-              marginBottom: 13,
+              marginBottom: 0,
               width: '65%',
             }}
           >
